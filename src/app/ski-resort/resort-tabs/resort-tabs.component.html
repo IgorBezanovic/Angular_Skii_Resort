@@ -1,0 +1,23 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>Tracks</a>
+      <ng-template ngbNavContent>
+        <app-tracks></app-tracks>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Weather</a>
+      <ng-template ngbNavContent>
+        <app-weather></app-weather>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Ski Pass</a>
+      <ng-template ngbNavContent>
+        <app-ski-pass></app-ski-pass>
+      </ng-template>
+    </li>
+  </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+  
